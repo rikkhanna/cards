@@ -1,2 +1,8 @@
-<app-card></app-card>
+<app-card
+    *ngFor="let post of posts"
+    [title] = "post.title"
+    [subtitle] = "post.subtitle"
+    [content] = "post.description"
+    [imageUrl] = "post.image"
+></app-card>
 
